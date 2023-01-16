@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(95, 95, 95);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: slategray;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #fffff;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: #ffff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(87, 92, 90);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Profil Mahasiswa</h2>
+<p></p>
+
+<header>
+  <h2>Tia Rismawati</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><h2><button onclick="document.location='home.html'">Home</button></h2></li>
+      <li><h2><button onclick="document.location='index.html'">Profil</button></h2></li>
+      <li><h2><button onclick="document.location='contact.html'">Contact</button></h2></li>
+      <h2><button onclick="document.location='https://tiarismawati.wordpress.com/'">mywebsite</button></h2>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1><p><b>WELCOME TO MY WEBSIDE
+      <p>AND HAPPY READING ABOUT ME:)</b></p></h1>
+    
+  </article>
+</section>
+        
+<footer>
+  <p>Copyright Tia_Rismawati</p>
+</footer>
+
+</body>
+</html>
+
